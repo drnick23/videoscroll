@@ -116,29 +116,6 @@
     for (TSCaptionTableViewCell *cell in visibleCells) {
         
         [cell adjustToScrollOffset:scrollView.contentOffset.y];
-       /* CGFloat cellStartOffset = cell.frame.origin.y - scrollView.contentOffset.y;
-        CGFloat cellEndOffset = cell.frame.origin.y + cell.frame.size.height - scrollView.contentOffset.y;
-        CGFloat imageHeight = cell.captionImage.frame.size.height;
-        CGFloat maxImageOffset = cellEndOffset - cellStartOffset - imageHeight;
-        
-        
-        CGFloat translateY = 0;
-        if (cellStartOffset < 0) {
-            translateY = MIN(-cellStartOffset,maxImageOffset);
-        }
-        cell.captionImage.transform = CGAffineTransformMakeTranslation(0,translateY*2);
-        
-        CGFloat overshoot = -cellStartOffset - translateY;
-        if (overshoot > 0) {
-            CGFloat overshootPerc = 1 - overshoot / imageHeight;
-            cell.captionImage.alpha = overshootPerc;
-        } else {
-            cell.captionImage.alpha = 1;
-        }
-        
-        NSLog(@"cell : [%f to %f] image height: %f translate:%f %@",cellStartOffset,cellEndOffset,imageHeight,translateY,cell.caption);
-        */
-        
     }
     
     //CGRect rectOfCellInTableView = [tableView rectForRowAtIndexPath:indexPath];

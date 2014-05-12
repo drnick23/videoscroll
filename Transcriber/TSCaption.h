@@ -12,6 +12,7 @@
 
 @property (strong,nonatomic) NSString *imageName;
 @property (strong,nonatomic) NSString *content;
+@property (assign,nonatomic) BOOL showImage;
 
 -(id)initWithData:(NSDictionary *)data;
 

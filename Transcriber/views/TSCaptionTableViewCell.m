@@ -22,7 +22,7 @@
 - (void)awakeFromNib
 {
     // Initialization code
-    self.backgroundColor = [UIColor blackColor];
+    self.backgroundColor = [UIColor clearColor];
 }
 
 - (void)setCaptionImage:(UIImage *)captionImage {
@@ -36,10 +36,11 @@
     _caption = caption;
     self.captionLabel.text = caption.content;
     
-    UIImage *image = [UIImage imageNamed:caption.imageName];
-    
-    self.foregroundImage.image = image;
-    self.backgroundImage.image = [image applyDarkEffect];
+    if (caption.imageName && caption.showImage) {
+        UIImage *image = [UIImage imageNamed:caption.imageName];
+        self.foregroundImage.image = image;
+        self.backgroundImage.image = [image applyDarkEffect];
+    }
     
 }
 

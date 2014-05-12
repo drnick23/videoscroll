@@ -13,7 +13,9 @@
 -(id)initWithData:(NSDictionary *)data {
     self = [super init];
     if (self) {
-        self.imageName = data[@"imageName"];
+        if (data[@"imageName"]) {
+            self.imageName = data[@"imageName"];
+        }
         self.content = data[@"content"];
     }
     return self;

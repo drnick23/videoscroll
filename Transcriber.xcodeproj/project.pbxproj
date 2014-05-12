@@ -26,6 +26,8 @@
 		012102CD1919EB5B00537618 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 012102CC1919EB5B00537618 /* UIImage+ImageEffects.m */; };
 		012102D1191ADBFB00537618 /* TSCaption.m in Sources */ = {isa = PBXBuildFile; fileRef = 012102D0191ADBFB00537618 /* TSCaption.m */; };
 		012102D4191ADF5F00537618 /* TSCaptionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 012102D3191ADF5F00537618 /* TSCaptionList.m */; };
+		0147228E191BE6B1009C3ADF /* TSVideoScroll2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0147228C191BE6B1009C3ADF /* TSVideoScroll2ViewController.m */; };
+		0147228F191BE6B1009C3ADF /* TSVideoScroll2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0147228D191BE6B1009C3ADF /* TSVideoScroll2ViewController.xib */; };
 		C5717EE04C83400B89E2A6F8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C245B71A7314639AADE850E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,9 @@
 		012102D0191ADBFB00537618 /* TSCaption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCaption.m; sourceTree = "<group>"; };
 		012102D2191ADF5F00537618 /* TSCaptionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSCaptionList.h; path = models/TSCaptionList.h; sourceTree = "<group>"; };
 		012102D3191ADF5F00537618 /* TSCaptionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSCaptionList.m; path = models/TSCaptionList.m; sourceTree = "<group>"; };
+		0147228B191BE6B1009C3ADF /* TSVideoScroll2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSVideoScroll2ViewController.h; path = controllers/TSVideoScroll2ViewController.h; sourceTree = "<group>"; };
+		0147228C191BE6B1009C3ADF /* TSVideoScroll2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSVideoScroll2ViewController.m; path = controllers/TSVideoScroll2ViewController.m; sourceTree = "<group>"; };
+		0147228D191BE6B1009C3ADF /* TSVideoScroll2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TSVideoScroll2ViewController.xib; path = controllers/TSVideoScroll2ViewController.xib; sourceTree = "<group>"; };
 		0C245B71A7314639AADE850E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E803644255B04C24B20028D1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,8 +182,11 @@
 			isa = PBXGroup;
 			children = (
 				012102C019192F7800537618 /* TSVideoScrollViewController.xib */,
-				012102BF19192F7800537618 /* TSVideoScrollViewController.m */,
 				012102BE19192F7800537618 /* TSVideoScrollViewController.h */,
+				012102BF19192F7800537618 /* TSVideoScrollViewController.m */,
+				0147228B191BE6B1009C3ADF /* TSVideoScroll2ViewController.h */,
+				0147228C191BE6B1009C3ADF /* TSVideoScroll2ViewController.m */,
+				0147228D191BE6B1009C3ADF /* TSVideoScroll2ViewController.xib */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -263,6 +271,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Nicolas Halper";
 				TargetAttributes = {
+					0121028B19181D9700537618 = {
+						DevelopmentTeam = BXP4NFFX5D;
+					};
 					012102A619181D9700537618 = {
 						TestTargetID = 0121028B19181D9700537618;
 					};
@@ -293,6 +304,7 @@
 			files = (
 				0121029A19181D9700537618 /* InfoPlist.strings in Resources */,
 				012102C219192F7800537618 /* TSVideoScrollViewController.xib in Resources */,
+				0147228F191BE6B1009C3ADF /* TSVideoScroll2ViewController.xib in Resources */,
 				012102A219181D9700537618 /* Images.xcassets in Resources */,
 				012102C91919354100537618 /* TSCaptionTableViewCell.xib in Resources */,
 			);
@@ -353,6 +365,7 @@
 				012102A019181D9700537618 /* TSAppDelegate.m in Sources */,
 				012102C81919354100537618 /* TSCaptionTableViewCell.m in Sources */,
 				012102D4191ADF5F00537618 /* TSCaptionList.m in Sources */,
+				0147228E191BE6B1009C3ADF /* TSVideoScroll2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,10 +483,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Transcriber/Transcriber-Prefix.pch";
 				INFOPLIST_FILE = "Transcriber/Transcriber-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -484,10 +500,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Transcriber/Transcriber-Prefix.pch";
 				INFOPLIST_FILE = "Transcriber/Transcriber-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

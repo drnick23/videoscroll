@@ -8,6 +8,7 @@
 
 #import "TSAppDelegate.h"
 #import "TSVideoScrollViewController.h"
+#import "TSVideoScroll2ViewController.h"
 
 @implementation TSAppDelegate
 
@@ -18,8 +19,15 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    TSVideoScrollViewController *videoScroll = [[TSVideoScrollViewController alloc] init];
-    self.window.rootViewController = videoScroll;
+    
+    // TODO:
+    // 1) top video space. Captions with blurred background that passes under and goes into focus.
+    // 2) top video space with sidebar thumbnails that stack. When you scroll the text the sidebar thumbnails move up, and the top one scales up into and behind the existing video in a single animation. You can tap the thumbnails to skip to the text there or scroll them faster.
+    // 3) top video space, and zoom in on image for the talker. So you get static image animation at hotspots of what the captions are talking about.
+    
+    //TSVideoScrollViewController *videoScroll = [[TSVideoScrollViewController alloc] init];
+    TSVideoScroll2ViewController *videoScroll2 = [[TSVideoScroll2ViewController alloc] init];
+    self.window.rootViewController = videoScroll2;
     return YES;
 }
 
