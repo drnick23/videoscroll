@@ -9,21 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-GTMHTTPFetcher.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Google-API-Client.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-gtm-oauth2.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -31,32 +16,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>056BCF741BEC486589279B86</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>32F033DE98604DF99F1B39EF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4CAD383BA69D42F89F1E0100</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E4401D2A463F4EB0A8106630</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F329EFD0666B4DD7B5BA13A4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
