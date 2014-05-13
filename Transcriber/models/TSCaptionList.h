@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TSCaption.h"
 
 @interface TSCaptionList : NSObject
+
+@property (strong,nonatomic) NSMutableArray *list;
 
 @end

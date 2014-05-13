@@ -7,10 +7,19 @@
 //
 
 #import "TSAppDelegate.h"
+#import "MenuViewController.h"
+#import "HamburgerContainerViewController.h"
 #import "TSVideoScrollViewController.h"
 #import "TSVideoScroll2ViewController.h"
 
+@interface TSAppDelegate()
+
+@property (nonatomic,strong) MenuViewController *menuViewController;
+
+@end
+
 @implementation TSAppDelegate
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -25,9 +34,20 @@
     // 2) top video space with sidebar thumbnails that stack. When you scroll the text the sidebar thumbnails move up, and the top one scales up into and behind the existing video in a single animation. You can tap the thumbnails to skip to the text there or scroll them faster.
     // 3) top video space, and zoom in on image for the talker. So you get static image animation at hotspots of what the captions are talking about.
     
-    //TSVideoScrollViewController *videoScroll = [[TSVideoScrollViewController alloc] init];
+    TSVideoScrollViewController *videoScroll = [[TSVideoScrollViewController alloc] init];
     TSVideoScroll2ViewController *videoScroll2 = [[TSVideoScroll2ViewController alloc] init];
-    self.window.rootViewController = videoScroll2;
+
+    self.menuViewController = [[MenuViewController alloc] init];
+    [self.menuViewController addMenuItemWithParameters:@{@"type":@(MT_LINK),@"name":@"Medium-style", @"controller":videoScroll}];
+    [self.menuViewController addMenuItemWithParameters:@{@"type":@(MT_LINK),@"name":@"Blendin-style",@"controller":videoScroll2}];
+
+    HamburgerContainerViewController *hamburgerContainerViewController = [[HamburgerContainerViewController alloc] init];
+    hamburgerContainerViewController.menuViewController = self.menuViewController;
+    hamburgerContainerViewController.contentViewController = videoScroll;
+    
+    self.window.rootViewController = hamburgerContainerViewController;
+
+
     return YES;
 }
 

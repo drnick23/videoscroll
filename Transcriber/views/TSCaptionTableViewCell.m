@@ -37,6 +37,7 @@
     self.captionLabel.text = caption.content;
     
     if (caption.imageName && caption.showImage) {
+        NSLog(@"setting image: %@",caption.imageName);
         UIImage *image = [UIImage imageNamed:caption.imageName];
         self.foregroundImage.image = image;
         self.backgroundImage.image = [image applyDarkEffect];

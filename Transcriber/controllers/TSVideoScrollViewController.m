@@ -8,13 +8,13 @@
 
 #import "TSVideoScrollViewController.h"
 #import "TSCaptionTableViewCell.h"
-#import "TSCaption.h"
+#import "TSCaptionList.h"
 
 @interface TSVideoScrollViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (strong,nonatomic) NSArray *captions; // of TSCaption
+@property (strong,nonatomic) TSCaptionList *captions; // of TSCaption
 
 @property (strong,nonatomic) TSCaptionTableViewCell *prototypeCell;
 
@@ -31,50 +31,16 @@
     return self;
 }
 
-- (NSArray *)captions {
+- (TSCaptionList *)captions {
     NSLog(@"TSVideoScrollViewController: captions");
     if (!_captions) {
-        NSLog(@"Initiliazing caption data");
-        NSArray *dataList = @[
-                      @{@"content":@"Something is in here",
-                        @"imageName":@"Image1"},
-                      @{@"content":@"And something goes in here too",
-                        @"imageName":@"Image2"},
-                      @{@"content":@"And again in here",
-                        @"imageName":@"Image1"},
-                      @{@"content":@"This could go on forever",
-                        @"imageName":@"Image2"},
-                      @{@"content":@"And possibly more",
-                        @"imageName":@"Image1"},
-                      @{@"content":@"And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list.",
-                        @"imageName":@"Image2"},
-                      @{@"content":@"Something is in here",
-                        @"imageName":@"Image1"},
-                      @{@"content":@"And something goes in here too",
-                        @"imageName":@"Image2"},
-                      @{@"content":@"And again in here",
-                        @"imageName":@"Image1"},
-                      @{@"content":@"This could go on forever",
-                        @"imageName":@"Image2"},
-                      @{@"content":@"And possibly more",
-                        @"imageName":@"Image1"},
-                      @{@"content":@"And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list. And let's add something much bigger to this list.",
-                        @"imageName":@"Image2"},
-                      ];
-        NSMutableArray *captionData = [@[] mutableCopy];
-        for (NSDictionary *data in dataList) {
-            TSCaption *caption = [[TSCaption alloc] initWithData:data];
-            [captionData addObject:caption];
-        }
-        _captions = [captionData copy];
-        NSLog(@"captions:%@",_captions);
+        _captions = [[TSCaptionList alloc] init];
     }
     return _captions;
 }
 
-
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.captions count];
+    return [self.captions.list count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -82,7 +48,8 @@
     
     TSCaptionTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CaptionTableViewCell" forIndexPath:indexPath];
     
-    TSCaption *caption = [self.captions objectAtIndex:indexPath.row];
+    TSCaption *caption = [self.captions.list objectAtIndex:indexPath.row];
+    caption.showImage = YES;
     cell.caption = caption;
     
     return cell;
@@ -90,7 +57,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return [self.prototypeCell calculateHeightWithCaption:self.captions[indexPath.row]];
+    return [self.prototypeCell calculateHeightWithCaption:self.captions.list[indexPath.row]];
 }
 
 - (TSCaptionTableViewCell *)prototypeCell

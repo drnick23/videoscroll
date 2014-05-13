@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0112DC70192287910008E809 /* HamburgerContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0112DC6E192287910008E809 /* HamburgerContainerViewController.m */; };
+		0112DC71192287910008E809 /* HamburgerContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0112DC6F192287910008E809 /* HamburgerContainerViewController.xib */; };
+		0112DC75192288AA0008E809 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0112DC73192288AA0008E809 /* MenuViewController.m */; };
+		0112DC76192288AA0008E809 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0112DC74192288AA0008E809 /* MenuViewController.xib */; };
 		0121029019181D9700537618 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121028F19181D9700537618 /* Foundation.framework */; };
 		0121029219181D9700537618 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121029119181D9700537618 /* CoreGraphics.framework */; };
 		0121029419181D9700537618 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121029319181D9700537618 /* UIKit.framework */; };
@@ -42,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0112DC6D192287910008E809 /* HamburgerContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HamburgerContainerViewController.h; sourceTree = "<group>"; };
+		0112DC6E192287910008E809 /* HamburgerContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HamburgerContainerViewController.m; sourceTree = "<group>"; };
+		0112DC6F192287910008E809 /* HamburgerContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HamburgerContainerViewController.xib; sourceTree = "<group>"; };
+		0112DC72192288AA0008E809 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		0112DC73192288AA0008E809 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		0112DC74192288AA0008E809 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		0121028C19181D9700537618 /* Transcriber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcriber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0121028F19181D9700537618 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0121029119181D9700537618 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -181,6 +191,12 @@
 		012102C31919351600537618 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0112DC72192288AA0008E809 /* MenuViewController.h */,
+				0112DC73192288AA0008E809 /* MenuViewController.m */,
+				0112DC74192288AA0008E809 /* MenuViewController.xib */,
+				0112DC6D192287910008E809 /* HamburgerContainerViewController.h */,
+				0112DC6E192287910008E809 /* HamburgerContainerViewController.m */,
+				0112DC6F192287910008E809 /* HamburgerContainerViewController.xib */,
 				012102C019192F7800537618 /* TSVideoScrollViewController.xib */,
 				012102BE19192F7800537618 /* TSVideoScrollViewController.h */,
 				012102BF19192F7800537618 /* TSVideoScrollViewController.m */,
@@ -306,6 +322,8 @@
 				012102C219192F7800537618 /* TSVideoScrollViewController.xib in Resources */,
 				0147228F191BE6B1009C3ADF /* TSVideoScroll2ViewController.xib in Resources */,
 				012102A219181D9700537618 /* Images.xcassets in Resources */,
+				0112DC71192287910008E809 /* HamburgerContainerViewController.xib in Resources */,
+				0112DC76192288AA0008E809 /* MenuViewController.xib in Resources */,
 				012102C91919354100537618 /* TSCaptionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,8 +382,10 @@
 				0121029C19181D9700537618 /* main.m in Sources */,
 				012102A019181D9700537618 /* TSAppDelegate.m in Sources */,
 				012102C81919354100537618 /* TSCaptionTableViewCell.m in Sources */,
+				0112DC70192287910008E809 /* HamburgerContainerViewController.m in Sources */,
 				012102D4191ADF5F00537618 /* TSCaptionList.m in Sources */,
 				0147228E191BE6B1009C3ADF /* TSVideoScroll2ViewController.m in Sources */,
+				0112DC75192288AA0008E809 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
