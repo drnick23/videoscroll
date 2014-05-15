@@ -37,16 +37,16 @@
     
     
     NSArray *subtitles = [self readSubtitles];
-    NSArray *timeValues = [subtitles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"startFloat > 0"]];
+    NSArray *timeValues = [subtitles valueForKey:@"startFloat"];
     NSLog(@"Time values: %@",timeValues);
-    for (NSDictionary *subtitle in subtitles) {
-        
-    }
     
+    // truncate to first 5 values only for testing.
+    timeValues = [NSArray arrayWithObjects:timeValues count:5];
+
     [self loadVideoWithURL:videoURL ready:^{
         
         NSLog(@"Video loaded: %@",videoURL);
-        [self framesAtTimeWithSeconds:@[@(60.0)] done:^(NSError *error, CGImageRef imageRef) {
+        [self framesAtTimeWithSeconds:timeValues done:^(NSError *error, CGImageRef imageRef) {
             UIImage *image = [UIImage imageWithCGImage:imageRef];
             NSLog(@"Got thumbnail %@ %f %f",image,image.size.width,image.size.height);
             
@@ -116,7 +116,7 @@
             
             [subtitles addObject:dictionary];
             
-            NSLog(@"%@", dictionary);
+           // NSLog(@"%@", dictionary);
         }
     }
     return subtitles;

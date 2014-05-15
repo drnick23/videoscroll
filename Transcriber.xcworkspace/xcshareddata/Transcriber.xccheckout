@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2301DE27-C089-4750-829D-2D10F038B7BB</string>
+	<string>16D4DAA6-AB17-4D4B-938D-879EA4E35275</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Transcriber</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>292EC74D-7EB7-49BB-92F4-8A58293094E7</key>
-		<string>https://github.com/drnick23/videoscroll.git</string>
+		<key>9D983F97-B3B0-438F-B450-C8E5C0C586DC</key>
+		<string>https://github.com/drnick23/videoscroll</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Transcriber.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>292EC74D-7EB7-49BB-92F4-8A58293094E7</key>
+		<key>9D983F97-B3B0-438F-B450-C8E5C0C586DC</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/drnick23/videoscroll.git</string>
+	<string>https://github.com/drnick23/videoscroll</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>292EC74D-7EB7-49BB-92F4-8A58293094E7</string>
+	<string>9D983F97-B3B0-438F-B450-C8E5C0C586DC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>292EC74D-7EB7-49BB-92F4-8A58293094E7</string>
+			<string>9D983F97-B3B0-438F-B450-C8E5C0C586DC</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Transcriber</string>
+			<string>videoscroll</string>
 		</dict>
 	</array>
 </dict>
