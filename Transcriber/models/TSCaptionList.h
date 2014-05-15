@@ -13,4 +13,6 @@
 
 @property (strong,nonatomic) NSMutableArray *list;
 
+- (void)loadData;
+
 @end

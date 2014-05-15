@@ -11,6 +11,7 @@
 		0112DC71192287910008E809 /* HamburgerContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0112DC6F192287910008E809 /* HamburgerContainerViewController.xib */; };
 		0112DC75192288AA0008E809 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0112DC73192288AA0008E809 /* MenuViewController.m */; };
 		0112DC76192288AA0008E809 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0112DC74192288AA0008E809 /* MenuViewController.xib */; };
+		0112DCCA192528E60008E809 /* test.srt in Resources */ = {isa = PBXBuildFile; fileRef = 0112DCC9192528E60008E809 /* test.srt */; };
 		0121029019181D9700537618 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121028F19181D9700537618 /* Foundation.framework */; };
 		0121029219181D9700537618 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121029119181D9700537618 /* CoreGraphics.framework */; };
 		0121029419181D9700537618 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121029319181D9700537618 /* UIKit.framework */; };
@@ -52,6 +53,7 @@
 		0112DC72192288AA0008E809 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		0112DC73192288AA0008E809 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		0112DC74192288AA0008E809 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		0112DCC9192528E60008E809 /* test.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.srt; sourceTree = "<group>"; };
 		0121028C19181D9700537618 /* Transcriber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcriber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0121028F19181D9700537618 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0121029119181D9700537618 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0112DCC8192528D30008E809 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0112DCC9192528E60008E809 /* test.srt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		0121028319181D9700537618 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 		0121029519181D9700537618 /* Transcriber */ = {
 			isa = PBXGroup;
 			children = (
+				0112DCC8192528D30008E809 /* Resources */,
 				012102CE191ADBE700537618 /* models */,
 				012102CA1919EB4400537618 /* resources */,
 				012102C41919351B00537618 /* views */,
@@ -325,6 +336,7 @@
 				0112DC71192287910008E809 /* HamburgerContainerViewController.xib in Resources */,
 				0112DC76192288AA0008E809 /* MenuViewController.xib in Resources */,
 				012102C91919354100537618 /* TSCaptionTableViewCell.xib in Resources */,
+				0112DCCA192528E60008E809 /* test.srt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
