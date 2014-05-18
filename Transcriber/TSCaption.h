@@ -14,6 +14,8 @@
 @property (strong,nonatomic) NSString *content;
 @property (assign,nonatomic) BOOL showImage;
 
+-(UIImage *)loadImage;
+
 -(id)initWithData:(NSDictionary *)data;
 
 

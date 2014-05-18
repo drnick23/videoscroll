@@ -36,18 +36,17 @@
     // 3) top video space, and zoom in on image for the talker. So you get static image animation at hotspots of what the captions are talking about.
     
     TSCaptionList *list = [[TSCaptionList alloc] init];
-    [list loadData];
     
-    TSVideoScrollViewController *videoScroll = [[TSVideoScrollViewController alloc] init];
-    TSVideoScroll2ViewController *videoScroll2 = [[TSVideoScroll2ViewController alloc] init];
+    //TSVideoScrollViewController *videoScroll = [[TSVideoScrollViewController alloc] init];
+    TSVideoScroll2ViewController *videoScroll2 = [[TSVideoScroll2ViewController alloc] initWithCaptionList:list];
 
     self.menuViewController = [[MenuViewController alloc] init];
-    [self.menuViewController addMenuItemWithParameters:@{@"type":@(MT_LINK),@"name":@"Medium-style", @"controller":videoScroll}];
+    //[self.menuViewController addMenuItemWithParameters:@{@"type":@(MT_LINK),@"name":@"Medium-style", @"controller":videoScroll}];
     [self.menuViewController addMenuItemWithParameters:@{@"type":@(MT_LINK),@"name":@"Blendin-style",@"controller":videoScroll2}];
 
     HamburgerContainerViewController *hamburgerContainerViewController = [[HamburgerContainerViewController alloc] init];
     hamburgerContainerViewController.menuViewController = self.menuViewController;
-    hamburgerContainerViewController.contentViewController = videoScroll;
+    hamburgerContainerViewController.contentViewController = videoScroll2;
     
     self.window.rootViewController = hamburgerContainerViewController;
 

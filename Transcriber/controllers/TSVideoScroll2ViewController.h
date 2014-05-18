@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSCaptionList.h"
 
 @interface TSVideoScroll2ViewController : UIViewController
+
+-(id)initWithCaptionList:(TSCaptionList *)captionList;
 
 @end

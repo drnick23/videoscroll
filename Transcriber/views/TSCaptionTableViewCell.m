@@ -8,6 +8,7 @@
 
 #import "TSCaptionTableViewCell.h"
 #import "UIImage+ImageEffects.h"
+#import "TSImage.h"
 
 @interface TSCaptionTableViewCell()
 
@@ -38,7 +39,7 @@
     
     if (caption.imageName && caption.showImage) {
         NSLog(@"setting image: %@",caption.imageName);
-        UIImage *image = [UIImage imageNamed:caption.imageName];
+        UIImage *image = [TSImage loadFromLocalStoreImageWithName:caption.imageName];
         self.foregroundImage.image = image;
         self.backgroundImage.image = [image applyDarkEffect];
     }
@@ -61,7 +62,7 @@
     CGFloat height = rect.size.height+520;
 
     
-    NSLog(@"Calculate hieght of %@ for width %f is %f:",caption.content,self.captionLabel.bounds.size.width,height);
+    //NSLog(@"Calculate hieght of %@ for width %f is %f:",caption.content,self.captionLabel.bounds.size.width,height);
     return height;
 }
 

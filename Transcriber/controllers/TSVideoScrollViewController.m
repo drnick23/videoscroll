@@ -48,7 +48,9 @@
     
     TSCaptionTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CaptionTableViewCell" forIndexPath:indexPath];
     
-    TSCaption *caption = [self.captions.list objectAtIndex:indexPath.row];
+    NSDictionary *data = [self.captions.list objectAtIndex:indexPath.row];
+    
+    TSCaption *caption = [[TSCaption alloc] initWithData:data];
     caption.showImage = YES;
     cell.caption = caption;
     

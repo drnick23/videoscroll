@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 //#import <MediaPlayer/MediaPlayer.h>
 #import "HCYoutubeParser.h"
+#import "TSImage.h"
 
 @interface TSCaptionList ()
 
@@ -23,7 +24,9 @@
 -(id)init {
     self = [super init];
     if (self) {
-        self.list = [self snowdenData];
+        NSLog(@"TSCaptionList:init");
+        [self loadData];
+        //NSLog(@"TSCaptionList:init read %u subtitles",[self.list count]);
     }
     return self;
 }
@@ -35,29 +38,63 @@
     NSLog(@"got video medium data: %@",videos[@"medium"]);
     NSURL *videoURL = [NSURL URLWithString:videos[@"medium"]];
     
-    
     NSArray *subtitles = [self readSubtitles];
-    NSArray *timeValues = [subtitles valueForKey:@"startFloat"];
-    NSLog(@"Time values: %@",timeValues);
-    
-    // truncate to first 5 values only for testing.
-    timeValues = [NSArray arrayWithObjects:timeValues count:5];
 
-    [self loadVideoWithURL:videoURL ready:^{
+    self.list = [@[] mutableCopy];
+    for (NSDictionary *data in subtitles) {
+        TSCaption *caption = [[TSCaption alloc] initWithData:data];
+        [self.list addObject:caption];
+    }
+    NSLog(@"setup %d captions in list",[self.list count]);
+
+    
+    NSArray *cmValues = [subtitles valueForKey:@"startCMTime"];
+    NSMutableArray *filteredCMValues = [@[] mutableCopy];
+    //CMTime cmTime = [cmValues[0] CMTimeValue];
+    for (NSValue *value in cmValues) {
+        CMTime cmTime = [value CMTimeValue];
         
+        NSString *imageName = [TSImage imageNameForCMTime:cmTime];
+        if (![TSImage fileExistsForImageName:imageName]) {
+            [filteredCMValues addObject:value];
+        }
+    }
+    
+    [self loadVideoWithURL:videoURL ready:^{
         NSLog(@"Video loaded: %@",videoURL);
-        [self framesAtTimeWithSeconds:timeValues done:^(NSError *error, CGImageRef imageRef) {
-            UIImage *image = [UIImage imageWithCGImage:imageRef];
+        
+        [self preprocessImagesToStore:filteredCMValues done:^(NSError *error, UIImage *image, CMTime cmTime) {
             NSLog(@"Got thumbnail %@ %f %f",image,image.size.width,image.size.height);
-            
-            //[self updateThumbWithImage:image];
-            [self saveToLocalStoreImage:image];
-            //self.thumbImageView.image = image;
-            //self.thumbImageView.backgroundColor = [UIColor redColor];
-            
         }];
     }];
 
+}
+
+- (void)preprocessImagesToStore:(NSArray *)cmTimes done:(void (^)(NSError *error, UIImage *image, CMTime cmTime))done;
+{
+    AVAssetImageGenerator *imageGenerator = [AVAssetImageGenerator assetImageGeneratorWithAsset:self.playerItem.asset];
+    
+    [imageGenerator generateCGImagesAsynchronouslyForTimes:cmTimes completionHandler:^(CMTime requestedTime, CGImageRef imageRef, CMTime actualTime, AVAssetImageGeneratorResult result, NSError *error) {
+        if (result == AVAssetImageGeneratorSucceeded) {
+            
+            UIImage *image = [UIImage imageWithCGImage:imageRef];
+            NSString *imageName = [TSImage imageNameForCMTime:requestedTime];
+            [TSImage saveToLocalStoreImage:image withName:imageName];
+            NSLog(@"generateCGImagesAsyncchrounouse imageName:%@",imageName);
+            done(nil, image,requestedTime);
+        } else if (result == AVAssetImageGeneratorFailed) {
+            done(error, nil, CMTimeMake(0,0));
+        } else if (result == AVAssetImageGeneratorCancelled) {
+            NSError *canceledError = [NSError errorWithDomain:@"VideoPlayerViewController: frame capture canceled" code:1 userInfo:nil];
+            done(canceledError, nil, CMTimeMake(0,0));
+        }
+    }];
+}
+
+
+- (void) loadDataFromDisk {
+    //NSString *theImagePath = [yourDictionary objectForKey:@"cachedImagePath"];
+    //UIImage *customImage = [UIImage imageWithContentsOfFile:theImagePath];
 }
 
 - (NSArray *) readSubtitles {
@@ -106,42 +143,26 @@
             
             float timeInSeconds = microseconds/1000.0 + seconds + minutes * 60 + hours * 3600;
             
+            CMTime cmTime = CMTimeMake((int)(timeInSeconds*1000.0), 1000);
+            
             NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
                                         [NSNumber numberWithFloat:timeInSeconds], @"startFloat",
+                                        [NSValue valueWithCMTime:cmTime],@"startCMTime",
+                                        [TSImage imageNameForCMTime:cmTime],@"imageName",
                                         indexString, @"index",
                                         startString, @"start",
                                         endString , @"end",
-                                        textString , @"text",
+                                        textString , @"content",
                                         nil];
-            
             [subtitles addObject:dictionary];
             
            // NSLog(@"%@", dictionary);
         }
     }
+    NSLog(@"Loaded %d subtitles",[subtitles count]);
     return subtitles;
 }
 
-
-- (void)saveToLocalStoreImage:(UIImage *)image {
-    NSData *imageData = UIImageJPEGRepresentation(image,0.1);
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    
-    NSString *imagePath =[documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg",@"cached"]];
-    
-    NSLog((@"pre writing to file"));
-    if (![imageData writeToFile:imagePath atomically:NO])
-    {
-        NSLog(@"Failed to cache image data to disk");
-    }
-    else
-    {
-        NSLog(@"the cachedImagedPath is %@",imagePath);
-    }
-    
-}
 
 
 - (void)loadVideoWithURL:(NSURL *)url ready:(void (^)(void))readyBlock
@@ -174,32 +195,6 @@
             done(canceledError, nil);
         }
     }];
-}
-
-
-- (NSMutableArray *)snowdenData {
-    NSArray *captions = @[@"The rights of citizens, the future of the Internet. So I would like to welcome to the TED stage the man behind those revelations, Ed Snowden. Ed is in a remote location somewhere in Russia controlling this bot from his laptop, so he can see what the bot can see. Ed, welcome to the TED stage. What can you see, as a matter of fact?",
-                           @"Ha, I can see everyone. This is amazing.\nEd, some questions for you. You've been called many things in the last few months. You've been called a whistleblower, a traitor, a hero. What words would you describe yourself with?",
-                           @"You know, everybody who is involved with this debate has been struggling over me and my personality and how to describe me. But when I think about it, this isn't the question that we should be struggling with. Who I am really doesn't matter at all. If I'm the worst person in the world, you can hate me and move on.",
-                           @"What really matters here are the issues. What really matters here is the kind of government we want, the kind of Internet we want, the kind of relationship between people and societies. And that's what I'm hoping the debate will move towards, and we've seen that increasing over time. If I had to describe myself, I wouldn't use words like \"hero.\" I wouldn't use \"patriot,\" and I wouldn't use \"traitor.\" I'd say I'm an American and I'm a citizen, just like everyone else.",
-                           @"So just to give some context for those who don't know the whole story this time a year ago, you were stationed in Hawaii working as a consultant to the NSA. As a sysadmin, you had access to their systems, and you began revealing certain classified documents to some handpicked journalists leading the way to June's revelations. Now, what propelled you to do this?",
-                           @"You know, when I was sitting in Hawaii, and the years before, when I was working in the intelligence community, I saw a lot of things that had disturbed me. We do a lot of good things in the intelligence community, things that need to be done, and things that help everyone. But there are also things that go too far. There are things that shouldn't be done, and decisions that were being made in secret without the public's awareness, without the public's consent, and without even our representatives in government having knowledge of these programs.",
-                           @"When I really came to struggle with these issues, I thought to myself, how can I do this in the most responsible way, that maximizes the public benefit while minimizing the risks? And out of all the solutions that I could come up with, out of going to Congress, when there were no laws, there were no legal protections for a private employee, a contractor in intelligence like myself, there was a risk that I would be buried along with the information and the public would never find out.",
-                           @"But the First Amendment of the United States Constitution guarantees us a free press for a reason, and that's to enable an adversarial press, to challenge the government, but also to work together with the government, to have a dialogue and debate about how we can inform the public about matters of vital importance without putting our national security at risk.",
-                           @"And by working with journalists, by giving all of my information back to the American people, rather than trusting myself to make the decisions about publication, we've had a robust debate with a deep investment by the government that I think has resulted in a benefit for everyone. And the risks that have been threatened, the risks that have been played up by the government have never materialized.",
-                           @"We've never seen any evidence of even a single instance of specific harm, and because of that, I'm comfortable with the decisions that I made. So let me show the audience a couple of examples of what you revealed. If we could have a slide up, and Ed, I don't know whether you can see, the slides are here."
-                           @"This is a slide of the PRISM program, and maybe you could tell the audience what that was that was revealed. The best way to understand PRISM because there's been a little bit of controversy, is to first talk about what PRISM isn't. Much of the debate in the U.S. has been about metadata. They've said it's just metadata, it's just metadata, and they're talking about a specific legal authority called Section 215 of the Patriot Act. That allows sort of a warrantless wiretapping, mass surveillance of the entire country's phone records, things like that -- who you're talking to, when you're talking to them, where you traveled. These are all metadata events.",
-                           @"PRISM is about content. It's a program through which the government could compel corporate America, it could deputize corporate America to do its dirty work for the NSA. And even though some of these companies did resist, even though some of them -- I believe Yahoo was one of them challenged them in court, they all lost, because it was never tried by an open court. They were only tried by a secret court."
-                           ];
-
-    NSMutableArray *data = [@[] mutableCopy];
-    int i = 0;
-    for (NSString *caption in captions) {
-        i++;
-        TSCaption *tscaption = [[TSCaption alloc] initWithData:@{@"content":caption,@"imageName":[NSString stringWithFormat:@"Image%d",(i % 10)+1]}];
-        [data addObject:tscaption];
-    }
-    return data;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {

@@ -28,6 +28,15 @@
 
 @implementation TSVideoScroll2ViewController
 
+-(id)initWithCaptionList:(TSCaptionList *)captionList
+{
+    self = [super init];
+    if (self) {
+        self.captions = captionList;
+    }
+    return self;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -38,7 +47,6 @@
 }
 
 - (TSCaptionList *)captions {
-    NSLog(@"TSVideoScroll2ViewController: captions");
     if (!_captions) {
         _captions = [[TSCaptionList alloc] init];
     }
@@ -47,6 +55,7 @@
 
 
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSLog(@"number of captions: %d",[self.captions.list count]);
     return [self.captions.list count];
 }
 
@@ -56,6 +65,7 @@
     TSCaptionTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CaptionTableViewCell" forIndexPath:indexPath];
     
     TSCaption *caption = [self.captions.list objectAtIndex:indexPath.row];
+    
     cell.caption = caption;
     
     return cell;
@@ -95,7 +105,8 @@
     TSCaptionTableViewCell *cell2nd;
     
     TSCaption *caption1st = cell1st.caption;
-    self.foregroundImage.image = [UIImage imageNamed:caption1st.imageName];
+    //self.foregroundImage.image = [UIImage imageNamed:caption1st.imageName];
+    self.foregroundImage.image = [caption1st loadImage];
     
     if (visibleCells.count == 1) {
         NSLog(@"only one visible cell");
@@ -125,7 +136,8 @@
         
         if (overshoot > 0) {
             TSCaption *caption2nd = cell2nd.caption;
-            self.backgroundImage.image = [UIImage imageNamed:caption2nd.imageName];
+            //self.backgroundImage.image = [UIImage imageNamed:caption2nd.imageName];
+            self.backgroundImage.image = [caption2nd loadImage];
             self.backgroundImage.backgroundColor = [UIColor blueColor];
             
             CGFloat overshootPerc = overshoot / imageHeight;
