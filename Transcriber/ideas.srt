@@ -1,0 +1,327 @@
+1
+00:00:03,377 --> 00:00:04,681
+For the past five years,
+
+2
+00:00:04,681 --> 00:00:05,815
+I've been investigating this question
+
+3
+00:00:05,815 --> 00:00:07,756
+of where good ideas come from.
+
+4
+00:00:07,903 --> 00:00:09,601
+It's a kind of problem, I think,
+
+5
+00:00:09,601 --> 00:00:11,203
+all of us are intrinsically interested in.
+
+6
+00:00:11,894 --> 00:00:13,498
+We want to be more creative.
+
+7
+00:00:13,498 --> 00:00:15,023
+We want to come up with better ideas.
+
+8
+00:00:15,023 --> 00:00:17,604
+We want our organisations to be more innovative.
+
+9
+00:00:18,192 --> 00:00:21,320
+I've looked at this problem from an environmental perspective.
+
+10
+00:00:22,108 --> 00:00:26,989
+What are the spaces that have historically lead to unusual rates of creativity and innovation?
+
+11
+00:00:27,623 --> 00:00:32,905
+And what I've found, in all this systems, there are these recurring patterns, that you see
+
+12
+00:00:33,023 --> 00:00:34,403
+again and again,
+
+13
+00:00:34,428 --> 00:00:36,981
+that are crucial to creating environments that are unusually innovative.
+
+14
+00:00:37,328 --> 00:00:39,431
+One pattern, I call the "slow hunch".
+
+15
+00:00:40,190 --> 00:00:43,816
+That breakthrough ideas almost never come in a moment of great insight.
+
+16
+00:00:44,517 --> 00:00:45,730
+In a sudden stroke of inspiration.
+
+17
+00:00:46,686 --> 00:00:49,285
+Most important ideas take a long time to evolve
+
+18
+00:00:50,022 --> 00:00:51,670
+and they spend a long time dormant,
+
+19
+00:00:51,859 --> 00:00:53,197
+in the background.
+
+20
+00:00:53,575 --> 00:00:55,776
+It isn't until the ideas have two or three years,
+
+21
+00:00:55,776 --> 00:00:58,193
+sometimes ten or twenty years, to mature
+
+22
+00:00:58,193 --> 00:01:00,488
+that it suddenly becomes acessible to you,
+
+23
+00:01:00,605 --> 00:01:02,558
+and useful to you, in a certain way.
+
+24
+00:01:03,014 --> 00:01:05,450
+And this is, partially, because good ideas
+
+25
+00:01:05,450 --> 00:01:08,541
+come from the collision between smaller hunches,
+
+26
+00:01:08,541 --> 00:01:11,113
+so that they form something bigger than themselves.
+
+27
+00:01:11,737 --> 00:01:13,603
+So you see a lot, in the history of innovation,
+
+28
+00:01:13,603 --> 00:01:16,824
+cases of someone who has half of an idea.
+
+29
+00:01:17,266 --> 00:01:18,774
+There's a great story about the invention
+
+30
+00:01:18,774 --> 00:01:20,632
+of the World Wide Web by Tim Berners-Lee.
+
+31
+00:01:21,019 --> 00:01:24,126
+This is a project that Berners-Lee worked on for ten years.
+
+32
+00:01:24,573 --> 00:01:28,958
+But when he started, he didn't have a full vision of this new medium he was going to invent.
+
+33
+00:01:29,451 --> 00:01:33,278
+He started working on one project, as a side-project to help him organize his own data.
+
+34
+00:01:33,862 --> 00:01:35,904
+He scrapped that after a couple of years,
+
+35
+00:01:35,942 --> 00:01:37,443
+and he started working on another thing.
+
+36
+00:01:37,443 --> 00:01:41,130
+And only after about ten years to the full vision of the web come into being
+
+37
+00:01:41,130 --> 00:01:43,597
+That is, more often that not,
+
+38
+00:01:43,597 --> 00:01:44,820
+how ideas happen.
+
+39
+00:01:45,300 --> 00:01:46,820
+They need time to incubate.
+
+40
+00:01:47,129 --> 00:01:49,985
+And they spend a lot of time in this 'partial hunch' form.
+
+41
+00:01:50,600 --> 00:01:52,349
+The other thing that's important,
+
+42
+00:01:52,349 --> 00:01:53,686
+when you think about ideas this way,
+
+43
+00:01:53,686 --> 00:01:56,183
+is that when ideas take form in this 'hunch' state,
+
+44
+00:01:56,183 --> 00:01:57,739
+they need to collide with other hunches.
+
+45
+00:01:57,739 --> 00:02:03,683
+Often times, the thing that turns a hunch in a real breakthrough is another hunch
+
+46
+00:02:03,683 --> 00:02:06,065
+that's lurking in someboby else's mind.
+
+47
+00:02:06,739 --> 00:02:08,583
+And you have to figure out a way to create systems
+
+48
+00:02:08,583 --> 00:02:12,734
+that allow those hunches to come together and turn into something bigger
+
+49
+00:02:12,734 --> 00:02:14,274
+than the sum of their parts.
+
+50
+00:02:14,612 --> 00:02:17,660
+That's why, for instance, the Coffee House in the age of the Enlightenment
+
+51
+00:02:17,975 --> 00:02:20,783
+Or the Parisian Salons of Modernism, were such engines of creativity.
+
+52
+00:02:22,764 --> 00:02:25,466
+Because they created a space where ideas could mingle
+
+53
+00:02:25,520 --> 00:02:26,605
+and swap
+
+54
+00:02:26,605 --> 00:02:27,116
+and create new forms.
+
+55
+00:02:27,563 --> 00:02:33,320
+When you look at the problem of innovation from this perspective,
+
+56
+00:02:33,603 --> 00:02:36,783
+it sheds a lot of important light on a debate we've been having recently
+
+57
+00:02:37,084 --> 00:02:39,304
+about what the Internet is doing to our brains.
+
+58
+00:02:39,803 --> 00:02:43,430
+Are we getting overwhelmed with an always connected, multi-tasking lifestyle?
+
+59
+00:02:43,941 --> 00:02:46,427
+And is this gonna lead to less sophisticated thoughts
+
+60
+00:02:46,802 --> 00:02:49,825
+as we move away from the slower, deeper, contemplative
+
+61
+00:02:49,859 --> 00:02:50,431
+state of reading, for instance?
+
+62
+00:02:52,269 --> 00:02:54,271
+Obviously, I'm a big fan of reading!
+
+63
+00:02:54,859 --> 00:02:56,726
+But I think it's important to remember that
+
+64
+00:02:56,726 --> 00:03:01,352
+the great driver of scientific innovation -- and technological innovation-- has been the
+
+65
+00:03:01,352 --> 00:03:04,103
+historic increase of connectivity.
+
+66
+00:03:04,570 --> 00:03:07,868
+And our ability to reach out and exchange ideas with other people.
+
+67
+00:03:08,127 --> 00:03:10,243
+And to borrow other people's hunches
+
+68
+00:03:10,243 --> 00:03:12,130
+and combine them with our hunches
+
+69
+00:03:12,130 --> 00:03:14,110
+and turn them into something new.
+
+70
+00:03:14,763 --> 00:03:19,161
+That really has, I think, been --more than anything else-- the primary engine
+
+71
+00:03:19,161 --> 00:03:22,573
+of creativity and innovation over the last 600 or 700 years.
+
+72
+00:03:23,430 --> 00:03:25,797
+And so, yes, it's true we're more distracted.
+
+73
+00:03:26,214 --> 00:03:30,767
+But what has happened, that is really miraculous and marvelous, over the last fifteen years
+
+74
+00:03:30,767 --> 00:03:33,513
+is that we have so many ways to connect.
+
+75
+00:03:33,941 --> 00:03:36,985
+And so many new ways to reach out and find other people
+
+76
+00:03:37,017 --> 00:03:39,941
+who have that missing piece that will complete the idea we're working on.
+
+77
+00:03:40,351 --> 00:03:42,683
+Or to stumble serendipitously across some amazing
+
+78
+00:03:42,683 --> 00:03:45,200
+new piece of information that we can use to build
+
+79
+00:03:45,200 --> 00:03:47,102
+and improve our own ideas.
+
+80
+00:03:47,933 --> 00:03:49,569
+That's the real lesson.
+
+81
+00:03:49,569 --> 00:03:51,243
+of where good ideas come from:
+
+82
+00:03:51,243 --> 00:03:53,733
+That chance favours the connected mind!

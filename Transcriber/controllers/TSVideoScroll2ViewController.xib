@@ -11,6 +11,7 @@
                 <outlet property="foregroundBlurImage" destination="UYL-5Z-pD6" id="A16-9Y-UIR"/>
                 <outlet property="foregroundImage" destination="LQt-Bc-fUs" id="By9-4F-ntG"/>
                 <outlet property="tableView" destination="opW-MW-TN7" id="mne-R9-4V4"/>
+                <outlet property="tapGestureRecognizer" destination="hXq-T3-clJ" id="45l-Ju-gmP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,18 +36,27 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="opW-MW-TN7">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="opW-MW-TN7">
+                    <rect key="frame" x="0.0" y="167" width="320" height="401"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="hXq-T3-clJ" appends="YES" id="77I-xb-kx9"/>
+            </connections>
         </view>
+        <tapGestureRecognizer id="hXq-T3-clJ">
+            <connections>
+                <action selector="onTap:" destination="-1" id="1VS-Vl-kgT"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="Image2" width="639" height="354"/>
+        <image name="Image2" width="640" height="355"/>
     </resources>
 </document>

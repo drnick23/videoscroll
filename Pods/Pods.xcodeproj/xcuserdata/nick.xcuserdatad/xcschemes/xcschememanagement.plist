@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-GTMHTTPFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Google-API-Client.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HCYoutubeParser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-gtm-oauth2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>466FF407DED346BE828DD215</key>
+		<key>23FB9CD050D34BDBBFC6F77D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98B6243CB41C4EA789697462</key>
+		<key>3F9F4A3A72E54D8F805FE24D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>992F974AA16F4413AFCD23C5</key>
+		<key>4905143A3C9845F480900870</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>679371F653EC4E5585E979AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ACDBB7B56DE6408ABB7C227E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAE657E4E96D465E8A4BBB04</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -12,5 +12,6 @@
 @interface TSVideoScroll2ViewController : UIViewController
 
 -(id)initWithCaptionList:(TSCaptionList *)captionList;
+-(void)resetToCaptionList:(TSCaptionList *)captionList;
 
 @end

@@ -25,20 +25,54 @@
     self = [super init];
     if (self) {
         NSLog(@"TSCaptionList:init");
-        [self loadData];
+        self.videoChoices = @{
+                              @"Snowden": @{
+                                      @"url":[NSURL URLWithString:@"https://www.youtube.com/watch?v=yVwAodrjZMY"],
+                                      @"subtitles":@"test"
+                              },
+                              @"Ideas":@{
+                                      @"url":[NSURL URLWithString:@"https://www.youtube.com/watch?v=oQodORB3Ngc"],
+                                      @"subtitles":@"ideas"
+                              },
+                              @"Obama":@{
+                                      @"url":[NSURL URLWithString:@"https://www.youtube.com/watch?v=SggOsfjsL0c"],
+                                      @"subtitles":@"obama"
+                              },
+                              @"Portobello":@{
+                                      @"url":[NSURL URLWithString:@"https://www.youtube.com/watch?v=w_BjAvbsmFA"],
+                                      @"subtitles":@"portobello"
+                               },
+                              @"Expert":@{
+                                      @"url":[NSURL URLWithString:@"https://www.youtube.com/watch?v=BKorP55Aqvg"],
+                                      @"subtitles":@"expert"
+                                      },
+                              @"Hexaflexagons":@{
+                                      @"url":[NSURL URLWithString:@"https://www.youtube.com/watch?v=VIVIegSt81k"],
+                                      @"subtitles":@"hexaflexagons"
+                                      }
+                              };
         //NSLog(@"TSCaptionList:init read %u subtitles",[self.list count]);
     }
     return self;
 }
 
-- (void) loadData {
+- (void) loadDataWithName:(NSString *)name {
+    
     // Gets an dictionary with each available youtube url
-    NSURL *url = [NSURL URLWithString:@"https://www.youtube.com/watch?v=yVwAodrjZMY"];
+    
+    NSDictionary *data = self.videoChoices[name];
+    if (data==nil) {
+        NSLog(@"ERRRRROOOR!!! Wrong name chosen with loadDataWithName");
+        return;
+    }
+    
+    NSURL *url = data[@"url"];
     NSDictionary *videos = [HCYoutubeParser h264videosWithYoutubeURL:url];
+    NSLog(@"videos list: %@",videos);
     NSLog(@"got video medium data: %@",videos[@"medium"]);
     NSURL *videoURL = [NSURL URLWithString:videos[@"medium"]];
     
-    NSArray *subtitles = [self readSubtitles];
+    NSArray *subtitles = [self readSubtitlesWithName:data[@"subtitles"]];
 
     self.list = [@[] mutableCopy];
     for (NSDictionary *data in subtitles) {
@@ -97,8 +131,9 @@
     //UIImage *customImage = [UIImage imageWithContentsOfFile:theImagePath];
 }
 
-- (NSArray *) readSubtitles {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"srt"];
+- (NSArray *) readSubtitlesWithName:(NSString *)name {
+    NSLog(@"Reading subtitles: %@",name);
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"srt"];
     
     NSString *string = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     

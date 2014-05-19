@@ -1,0 +1,526 @@
+1
+00:00:00,255 --> 00:00:03,336
+Our company has a new strategic initiative
+
+2
+00:00:03,336 --> 00:00:06,625
+to increase market penetration, maximize brand loyalty,
+
+3
+00:00:06,625 --> 00:00:08,693
+and enhance intangible assets.
+
+4
+00:00:08,693 --> 00:00:12,077
+In pursuit of these objectives, we've started a new project
+
+5
+00:00:12,077 --> 00:00:14,673
+for which we require seven red lines.
+
+6
+00:00:14,673 --> 00:00:16,776
+I understand your company can help us in this matter.
+
+7
+00:00:16,776 --> 00:00:20,564
+Man: Of course. Walter here will be the project manager.
+
+8
+00:00:20,564 --> 00:00:24,071
+Walter, we can do this, can't we?
+Walter: Yes, of course.
+
+9
+00:00:24,071 --> 00:00:27,606
+Walter: Anderson here is our expert in all matters related to the drawing of red lines.
+
+10
+00:00:27,606 --> 00:00:30,059
+We've brought him along today to share his professional opinion.
+
+11
+00:00:30,059 --> 00:00:32,871
+(Woman) Nice to meet you. Well, you all know me.
+
+12
+00:00:32,871 --> 00:00:36,540
+-This is Justine, our company's design specialist.
+- Justine: Hello.
+
+13
+00:00:36,540 --> 00:00:41,233
+Woman: We need you to draw seven red lines all of them strictly perpendicular.
+
+14
+00:00:41,233 --> 00:00:45,193
+Some with green ink and some with transparent. Can you do that?
+
+15
+00:00:46,670 --> 00:00:49,479
+-Anderson: (pausing) No, I'm afraid we...
+-Walter: Let's not rush into any hasty answers, Anderson.
+
+16
+00:00:49,518 --> 00:00:51,814
+Walter: The task has been set and needs to be carried out.
+
+17
+00:00:51,926 --> 00:00:53,968
+At the end of the day, you are an expert.
+
+18
+00:00:53,995 --> 00:00:56,515
+Anderson: The term "red line" implies the color of the line to be red.
+
+19
+00:00:56,635 --> 00:00:58,746
+To draw a red line with green ink is,
+
+20
+00:00:58,847 --> 00:01:01,375
+well, if it's not exactly impossible, it's pretty close to being impossible.
+
+21
+00:01:02,471 --> 00:01:04,569
+Walter: What does that even mean? "Impossible"
+
+22
+00:01:04,824 --> 00:01:06,045
+-Women laughing
+-Anderson: I mean it is possible there are some
+
+23
+00:01:06,243 --> 00:01:10,926
+people suffering from colorblindness for whom the color blind doesn't really make a difference.
+
+24
+00:01:10,926 --> 00:01:13,399
+But I'm quite sure that the target audience
+
+25
+00:01:13,466 --> 00:01:16,003
+of your project doesn't consist solely of such people.
+
+26
+00:01:16,142 --> 00:01:18,035
+Woman: So, in principle, this is possible.
+
+27
+00:01:20,301 --> 00:01:23,942
+Anderson: I'll simplify. Lines as such can be drawn with absolutely any ink.
+
+28
+00:01:24,153 --> 00:01:27,850
+But if you want to get a red line, you need to use red ink.
+
+29
+00:01:27,997 --> 00:01:30,810
+-Man: What if we draw them with blue ink? 
+-Walter: Hmm. Hmm.
+
+30
+00:01:31,005 --> 00:01:34,702
+Anderson: It still won't work. If you use blue ink, you'll get blue lines.
+
+31
+00:01:37,337 --> 00:01:40,727
+And what exactly did you mean when you talked about the transparent ink?
+
+32
+00:01:41,061 --> 00:01:43,699
+Woman: How would I explain? I'm sure you know what
+
+33
+00:01:43,739 --> 00:01:44,844
+transparent means.
+
+34
+00:01:44,931 --> 00:01:49,610
+-Anderson: Yes, I do.
+-Woman: And what a red line means. I hope I don't need to explain to you
+
+35
+00:01:49,861 --> 00:01:51,238
+(laughing)
+-Anderson: Of course not.
+
+36
+00:01:51,461 --> 00:01:55,404
+Woman: Well. You need to draw a red line... with transparent ink.
+
+37
+00:01:56,069 --> 00:01:59,140
+Anderson: Could you describe what you imagine the end result would look like?
+
+38
+00:01:59,160 --> 00:02:00,903
+Walter: Oh come on, Anderson, what have we got here? Kindergarten.
+
+39
+00:02:01,073 --> 00:02:02,078
+(all talking at once)
+
+40
+00:02:02,231 --> 00:02:05,284
+Man: Let's not waste our time with these unproductive quarrels.
+
+41
+00:02:05,585 --> 00:02:08,633
+The task has been set, the task is plain and clear.
+
+42
+00:02:08,633 --> 00:02:11,788
+Now, if you have any specific questions, then go ahead.
+
+43
+00:02:11,788 --> 00:02:14,106
+Walter: You're the expert here.
+
+44
+00:02:14,744 --> 00:02:17,431
+Anderson: Alright, let's leave aside the color for the moment.
+
+45
+00:02:17,431 --> 00:02:20,692
+You had something there also relating to perpendicularity.
+
+46
+00:02:20,692 --> 00:02:23,121
+Woman: Seven lines. All strictly perpendicular.
+
+47
+00:02:23,121 --> 00:02:24,459
+Anderson: To what?
+
+48
+00:02:25,056 --> 00:02:30,304
+Woman: Uh... To everything... amongst themselves.
+
+49
+00:02:30,778 --> 00:02:32,812
+I assume you know what perpendicular lines are like?
+
+50
+00:02:33,162 --> 00:02:35,627
+Walter: Of course he does. He's an expert.
+
+51
+00:02:35,854 --> 00:02:40,704
+Anderson: Two lines can be perpendicular. All seven can't be simultaneously perpendicular to each other.
+
+52
+00:02:42,140 --> 00:02:43,987
+I'll, I'll show you!
+
+53
+00:02:46,219 --> 00:02:48,744
+This is a line. Right?
+
+54
+00:02:49,151 --> 00:02:50,533
+Woman: Yes.
+
+55
+00:02:51,328 --> 00:02:55,142
+Anderson: And another. Is it perpendicular to the first line?
+
+56
+00:02:56,282 --> 00:02:59,826
+-Woman: Well...
+-Anderson: Yes! It is perpendicular.
+
+57
+00:02:59,832 --> 00:03:02,718
+-Woman: Exactly. Yes.
+-Anderson: Wait, wait I'm not done.
+
+58
+00:03:02,970 --> 00:03:06,131
+And a third one. Is it perpendicular to the first line?
+
+59
+00:03:06,847 --> 00:03:10,444
+Yes it is. But it doesn't cross the second line.
+
+60
+00:03:10,857 --> 00:03:14,460
+They're both parallel. Not perpendicular.
+
+61
+00:03:15,850 --> 00:03:20,920
+Woman: Ah. Suppose so. 
+Anderson: There it is. Two lines can be perpendicular...
+
+62
+00:03:21,120 --> 00:03:25,454
+Woman: Can I have the pen?
+(drawing noises)
+
+63
+00:03:42,999 --> 00:03:45,994
+How bout this?
+
+64
+00:03:48,261 --> 00:03:54,557
+Anderson: This is a triangle. It's definitely not perpendicular lines.
+
+65
+00:03:54,557 --> 00:03:58,588
+And there are three, not seven.
+
+66
+00:03:58,588 --> 00:04:01,749
+-Man: Why are they blue?
+-Walter: Indeed, I wanted to ask that myself.
+
+67
+00:04:01,749 --> 00:04:04,612
+Anderson: I have a blue pen with me. This was just a demonstration.
+
+68
+00:04:04,612 --> 00:04:08,079
+Man: That's the problem, your lines are blue. Draw them with red ink.
+
+69
+00:04:08,079 --> 00:04:10,057
+Anderson: It won't solve the problem.
+
+70
+00:04:10,057 --> 00:04:11,999
+Walter: Well, how do you know before you've tried?
+
+71
+00:04:11,999 --> 00:04:13,731
+Let's draw them with red ink and then let's see, hmm?
+
+72
+00:04:13,731 --> 00:04:19,173
+Anderson: I don't have a red pen with me. But, um, I'm completely certain that with red ink the result will still be the same.
+
+73
+00:04:19,173 --> 00:04:22,932
+Walter: Didn't you tell us earlier that you could only draw red lines with red ink?
+
+74
+00:04:22,932 --> 00:04:25,348
+In fact, yes, I've written that down here.
+
+75
+00:04:25,348 --> 00:04:29,359
+And now you want to draw them with blue ink. And you want us to call these red lines?
+
+76
+00:04:29,359 --> 00:04:33,293
+Justine: I think I understand. You're not talking about the color now, right?
+
+77
+00:04:33,293 --> 00:04:38,095
+You're talking about that, um, what do you call it, uh, perpen- perpendic-
+
+78
+00:04:38,095 --> 00:04:39,884
+Anderson: Perpendicularity! Yes!
+
+79
+00:04:39,884 --> 00:04:42,340
+Man: That's it. Now you've confused everyone.
+
+80
+00:04:42,340 --> 00:04:45,050
+So what exactly is stopping us from doing this?
+
+81
+00:04:45,050 --> 00:04:47,004
+Anderson: Geometry.
+
+82
+00:04:47,004 --> 00:04:48,668
+Woman: Just ignore it.
+
+83
+00:04:48,668 --> 00:04:51,236
+Man: We have a task. Seven red lines.
+
+84
+00:04:51,236 --> 00:04:53,559
+It's not twenty. It's just seven.
+
+85
+00:04:53,559 --> 00:04:56,317
+Anderson, I understand you're a specialist of a narrow field.
+
+86
+00:04:56,317 --> 00:04:58,199
+You don't see the overall picture.
+
+87
+00:04:58,199 --> 00:05:02,092
+But surely it's not a difficult task to draw some seven lines.
+
+88
+00:05:02,092 --> 00:05:06,219
+Walter: Exactly. Suggest a solution. Any fool can criticize.
+
+89
+00:05:06,219 --> 00:05:10,214
+No offense. But you're an expert. You should know better.
+
+90
+00:05:10,636 --> 00:05:15,926
+Anderson: Okay. Let me draw you two perfectly perpendicular red lines.
+
+91
+00:05:15,926 --> 00:05:20,126
+And I will draw the rest with transparent ink.
+
+92
+00:05:20,126 --> 00:05:22,499
+They'll be invisible, but I'll draw them.
+
+93
+00:05:22,499 --> 00:05:25,087
+Woman: Would this suit us?
+
+94
+00:05:25,087 --> 00:05:27,540
+(Justine nodding)
+-Woman: Yes, this will suit us.
+
+95
+00:05:27,540 --> 00:05:30,889
+Justine: Yes, but at least a couple with green ink. Oh, and I have another question if I may.
+
+96
+00:05:30,889 --> 00:05:34,266
+Can you draw one of the lines in the form of a kitten?
+
+97
+00:05:34,266 --> 00:05:37,085
+-Anderson: Uh, what?
+-Justine: In the form of a kitten?
+
+98
+00:05:37,085 --> 00:05:40,126
+Market research tells us our users like cute animals.
+
+99
+00:05:40,126 --> 00:05:42,424
+Justine: It will be really great if we could...
+Anderson: No...
+
+100
+00:05:42,424 --> 00:05:43,759
+Justine: But why?
+
+101
+00:05:43,759 --> 00:05:46,878
+Anderson: Look, I can of course draw you a cat. I'm not artist but I can give it a try.
+
+102
+00:05:46,878 --> 00:05:49,231
+But it won't be a line anymore, it will be a cat.
+
+103
+00:05:49,231 --> 00:05:51,389
+A line and a cat, these are two different things.
+
+104
+00:05:51,389 --> 00:05:57,911
+Woman: A kitten. Not a cat. But a kitten. They're little. Cute. Cuddly.
+
+105
+00:05:57,911 --> 00:06:00,294
+-Woman: Cats on the other hand are...
+-Anderson: It won't make a difference.
+
+106
+00:06:00,294 --> 00:06:03,836
+Walter: Anderson, at least hear her out. She hasn't even finished speaking and you're already saying no.
+
+107
+00:06:03,836 --> 00:06:09,765
+Anderson: I got the idea. But it's impossible to draw a line in the form of a cat - kitten.
+
+108
+00:06:09,765 --> 00:06:12,492
+Justine: What about a bird?
+
+109
+00:06:15,737 --> 00:06:17,588
+Man: So where do we stop? What are we doing?
+
+110
+00:06:17,588 --> 00:06:20,660
+Walter: Seven red lines, two with red ink, two with green ink
+
+111
+00:06:20,660 --> 00:06:23,452
+and the rest with transparent. Did I understand correctly?
+
+112
+00:06:23,452 --> 00:06:26,423
+-Woman: Yes.
+-Man: Excellent. In which case that's everything, right?
+
+113
+00:06:26,423 --> 00:06:29,431
+Justine: Oh, I almost forgot. We also have a red balloon.
+
+114
+00:06:29,431 --> 00:06:31,566
+Do you know if you could inflate it?
+
+115
+00:06:35,689 --> 00:06:37,756
+Anderson: What do I have to do with balloons?
+
+116
+00:06:37,756 --> 00:06:38,917
+Justine: It's red.
+
+117
+00:06:38,917 --> 00:06:42,370
+Man: Anderson, can you or can you not do this? It's a simple question.
+
+118
+00:06:42,658 --> 00:06:44,310
+Anderson: As such, I can, of course, but -
+
+119
+00:06:44,310 --> 00:06:47,944
+Man: Excellent. Organize a business trip. We'll cover the expenses,
+
+120
+00:06:47,944 --> 00:06:52,690
+go over to their location, inflate the balloon.
+
+121
+00:06:53,068 --> 00:06:56,730
+Well, this was very productive. Thank you all.
+
+122
+00:06:57,677 --> 00:07:00,752
+(Indistinct talking)
+(door closes)
+
+123
+00:07:06,705 --> 00:07:10,492
+(door opens)
+Justine: Can I ask you one more question, please?
+
+124
+00:07:11,623 --> 00:07:15,653
+When you inflate the balloon, could you do it in the form of a kitten?
+
+125
+00:07:16,513 --> 00:07:19,699
+Anderson: Of course I can. I can do anything.
+
+126
+00:07:19,908 --> 00:07:34,242
+I can do absolutely anything. I'm an expert.
+
+127
+00:07:34,242 --> 00:07:34,492
+

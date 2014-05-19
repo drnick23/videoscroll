@@ -11,8 +11,9 @@
 
 @interface TSCaptionList : NSObject
 
+@property (strong,nonatomic) NSDictionary *videoChoices;
 @property (strong,nonatomic) NSMutableArray *list;
 
-- (void)loadData;
+- (void)loadDataWithName:(NSString *)name;
 
 @end
